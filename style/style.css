@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* reset 시작 */
+*{
+  color: #222;
+  text-decoration: none;
+  padding : 0;
+  margin: 0 auto;
+}
+/* reset 종료 */
+
+#wrap {
+  width: 500px;
+  height: 200px;
+  border: 2px solid #f08;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  padding: 10px;
+  border: 2px solid #000;
+  margin: 5px;
+  flex-basis: content;
+}
+
+/* 각 아이템들의 시각적 나열 순서를 
+결정하는 속성. 숫자값이 들어가며, 
+작은 숫자일 수록 먼저 배치.
+.item:nth-child(1) { order: 3; }
+.item:nth-child(2) { order: 1; }
+.item:nth-child(3) { order: 2; } */
+
+/* 예시 (1:2:1의 비율로 세팅할 경우)
+.item:nth-child(1) { flex-grow: 1; }
+.item:nth-child(2) { flex-grow: 2; }
+.item:nth-child(3) { flex-grow: 1; } */
+
